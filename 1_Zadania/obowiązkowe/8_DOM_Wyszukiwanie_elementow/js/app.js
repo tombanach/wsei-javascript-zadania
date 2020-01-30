@@ -2,6 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {
     /*
     Poniżej napisz kod rozwiązujący zadania. Odpowiedzi oddzielaj komentarzami.
      */
+
+    
+    // Zadanie 0
+    
     const titleEl = document.querySelector("div .title");
 
     function getDataAnimation(element){

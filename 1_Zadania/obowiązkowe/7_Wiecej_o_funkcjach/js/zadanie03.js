@@ -1,17 +1,19 @@
-a();
+sayHi();
 
-function a() {
-
-    console.log("Cześć")
+function sayHi() {
+    console.log('Cześć');
 }
 
-a();
+sayHi();
 
-b();
+sayHello();
 
-var b = function(){
-
-    console.log("Witaj");
+const sayHello = function() {
+    console.log('Witaj');
 }
 
-b();
+sayHello();
+
+
+//w przypadku funkcji sayHi nie ma znaczenia dla dzialania czy wywolamy ja przed czy po definicji, dziala przeniesienie deklaracji na sama gore
+// w przypadku wyrazenia funkcyjnego jezeli sprobujemy wywolac je przed definicja otrzymamy blad

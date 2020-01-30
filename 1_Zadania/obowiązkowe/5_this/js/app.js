@@ -37,7 +37,7 @@ console.log(car.showServices());
 
 
 
-// Zadania 2
+// Zadanie 3
 
 const stairs = {
     step: 0,

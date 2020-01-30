@@ -1,81 +1,89 @@
-// Zadanie 0
+// Zadanie 0A
 
 const city = {
-    capital: "Warszawa",
-    population: 2000000,
-    president: "Trzaskowski",
-    primeMinister: ["Adam", "Bogdan"]
+    capital: 'Warsaw',
+    population: 38000000,
+    president: 'Andrzej',
+    primeMinisters: [
+        'Marek ZAGÓRSKI',
+        'Dariusz PIONTKOWSKI',
+        'Krzysztof TCHÓRZEWSKI'
+    ]
 };
 
-console.log(city.capital + city.population + city.president + city.primeMinister);
+console.log(`capital: ${city.capital}`);
+console.log(`population: ${city.population}`);
+console.log(`president: ${city.president}`);
+console.log(`primeMinisters: ${city.primeMinisters}`);
+
+
+
+// Zadanie 0B
 
 const timeMachine = {
-    shape: "Kwadrat",
-    model: "",
-    run: function(date, place) {
-        console.log(`Przeniosłeś się do  ${place} i jest obecnie ${date} date`);
+    shape: 'triangle',
+    model: 'Yabba',
+    run: (date, place) => {
+        console.log(`Now(${date}) we are in ${place}`);
     }
 };
+console.log(`shape: ${timeMachine.shape}`);
+console.log(`model: ${timeMachine.model}`);
+timeMachine.run('2085-06-01', 'the Sun');
 
-timeMachine.run("20-11-2030", "Sydney");
 
 
 // Zadanie 1
 
 const book = {
-    title: 'test',
-    author: 'author',
-    numberOfPages: 'number'
+    title: 'Programming in C#',
+    author: 'Adam Mickiewicz',
+    numberOfPages: 300
 };
+console.log(book);
 
-for (const key of book) {
-    console.log(book[key]);
-}
 
 
 // Zadanie 2
 
-var person = {
-    name: 'Andrzej',
-    age: 12,
-    sayHello: function(){
-        console.log("hello");
+const person = {
+    name: 'Jerzy Owsiak',
+    age: 13,
+    sayHello: () => {
+        console.log('Hello');
     }
-}
-
-console.log(person.name);
-console.log(person.age);
+};
+console.log(`name: ${person.name}, age: ${person.age}`);
 person.sayHello();
 
 
-//Zadanie 3
 
-const recipe = {
-    title: 'przepis',
-    servings: 0
-}
+// Zadanie 3
 
-recipe.ingredients = [];
-recipe.addIngredient = function(ingredient) {
-    this.ingredient.push(ingredient);
-    this.servings++;
-}
+const favouriteRecipe = {
+    title: 'burger',
+    servings: 2
+};
 
-recipe.addIngredient('składnik 1');
-recipe.addIngredient('składnik 2');
+favouriteRecipe.ingredients = [
+    'roll',
+    'salt',
+    'tomatoes',
+    'ham',
+    'cheese'
+];
 
-console.log(recipe.title);
-console.log(recipe.servings);
-console.log(recipe.ingredients);
+console.log(`title: ${favouriteRecipe.title}, servings: ${favouriteRecipe.servings}, ingredients: ${favouriteRecipe.ingredients}`);
 
 
-//Zadanie 6
+
+// Zadanie 6
 
 var spoon = {
     isExist: true
 }
 
 var fork = spoon;
-fork.isExist = false;
+fork.isExist  = false;
 
 console.log(spoon.isExist);
